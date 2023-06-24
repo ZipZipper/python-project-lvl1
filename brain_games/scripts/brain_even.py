@@ -1,7 +1,9 @@
 import random
 
+answer = (' is wrong answer ;(. Correct answer was ')
 
-def is_even(number):
+
+def even(number):
     return number % 2 == 0
 
 
@@ -10,28 +12,25 @@ def even_game():
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")
-    print()
-
     correct_answers_count = 0
-    while correct_answers_count <3:
+    while correct_answers_count < 3:
         number = random.randint(1, 100)
         print(f"Question: {number}")
-        user_answer = input("Your answer: ").lower()
-
-        if (is_even(number) and user_answer == "yes") or (not is_even(number) and user_answer == "no"):
+        an = input("Your answer: ").lower()
+        if (even(number) and an == "yes") or (not even(number) and an == "no"):
             print("Correct!")
             correct_answers_count += 1
         else:
-            correct_answer = "no" if is_even(number) else "yes"
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            correct_answer = "no" if even(number) else "yes"
+            print(f"'{an}{answer}{correct_answer}'.")
             print(f"Let's try again, {name}!")
-            print()
             return
     print(f"Congratulations, {name}!")
+
 
 def main():
     even_game()
 
- 
+
 if __name__ == '__main__':
-    main()     
+    main()
