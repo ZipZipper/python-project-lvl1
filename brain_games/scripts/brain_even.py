@@ -11,7 +11,7 @@ def even_game():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers_count = 0
     while correct_answers_count < 3:
         number = random.randint(1, 100)
