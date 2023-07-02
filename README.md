@@ -18,7 +18,7 @@ brain-prime
 
 
 
-https://github.com/ZipZipper/python-project-lvl1/blob/main/README.md#hexlet-tests-and-linter-status
+
 
 
 
