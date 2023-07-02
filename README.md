@@ -21,11 +21,3 @@ ___
 
 ### Codeclimate
 [![Maintainability](https://api.codeclimate.com/v1/badges/5a7443afee9feedfdc9a/maintainability)](https://codeclimate.com/github/ZipZipper/python-project-lvl1/maintainability)
-
-
-
-
-
-
-
-https://codeclimate.com/github/Fulerent/python-project-lvl1
