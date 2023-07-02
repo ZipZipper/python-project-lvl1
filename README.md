@@ -14,7 +14,7 @@
 ___
 
 ### Hexlet tests and linter status:
-
+[![hexlet-check](https://github.com/ZipZipper/python-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ZipZipper/python-project-lvl1/actions/workflows/hexlet-check.yml)
 
 ### Project tests and linter status:
 
