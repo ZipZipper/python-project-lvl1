@@ -1,6 +1,5 @@
 ## Python hexlet-project-lvl1 
 
-*install - pip install --user brain-games ZipZipper-hexlet-project-lvl1*
 
 **Package have 6 games. They run when you will write command:**
 - brain-games
