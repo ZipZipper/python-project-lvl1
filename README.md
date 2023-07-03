@@ -2,12 +2,12 @@
 
 
 **Package have 6 games. They run when you will write command:**
-- brain-games
-- brain-even
-- brain-calc
-- brain-gcd
-- brain-progression
-- brain-prime
+- brain-games  https://asciinema.org/a/56p4xi5W64VsAUaivrxuFY0AY
+- brain-even  https://asciinema.org/a/7eifA3Txh5MfEkG4J4NEbaKpe      
+- brain-calc  https://asciinema.org/a/BCJGci5JjxCtRsJFmGv2duV47     
+- brain-gcd   https://asciinema.org/a/govoe6VVa1TY1sZ31eWJgfeat    
+- brain-progression  https://asciinema.org/a/W51RrjlwGn9JX7aczcyHQ1OKp
+- brain-prime  https://asciinema.org/a/diEKFtP7XCMp64Id2pX8UexyQ
 
 
 ___
