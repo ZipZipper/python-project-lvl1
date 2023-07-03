@@ -1,7 +1,7 @@
 import random
 from .core_logic import start_game
 
-task = 'Answer "yes" if the number is even, otherwise answer "no".'
+task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def logic():
