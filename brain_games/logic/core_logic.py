@@ -34,7 +34,6 @@ def play_rounds(logic, name):
             break
 
 
-
 def start_game(task, logic):
     greeting()
     user_name = prompt_and_get_user_name()
