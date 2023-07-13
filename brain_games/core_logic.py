@@ -19,8 +19,8 @@ def play_rounds(logic, name):
         ask, resp = logic()
         print('Question: {}'.format(ask))
         resp_user = prompt.string('Your answer: ')
-        user_answer = int(user_answer)  
-        correct_answer = int(correct_answer)  
+        resp_user = int(resp_user)  
+        resp = int(resp)  
 
         if resp_user == resp:
             print("Correct!")
