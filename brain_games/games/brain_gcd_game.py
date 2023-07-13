@@ -12,9 +12,9 @@ def games():
 def find_minimal_divisor(num1, num2):
     for n in range(min(num1, num2), 1, -1):
         if num1 % n == 0 and num2 % n == 0:
-            return n
+            return str(n)
     else:
-        return 1
+        return str(1)
 
 def brain_gcd_game():
     start_game(TASK, games)
