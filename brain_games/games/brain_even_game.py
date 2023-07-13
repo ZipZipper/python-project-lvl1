@@ -6,11 +6,11 @@ TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def games():
     num1 = random.randint(1, 100)
-    return num1, _is_even(num1)
+    return num1, is_even(num1)
 
 
-def _is_even(num_):
-    return 'yes' if num_ % 2 == 0 else 'no'
+def is_even(num_):
+    return num_ % 2 == 0
 
 
 def brain_even_game():
