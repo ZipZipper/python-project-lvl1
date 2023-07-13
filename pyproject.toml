@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.6.5"
+version = "0.6.6"
 description = "Python hexlet-project-lvl1"
 repository = "https://github.com/ZipZipper/python-project-lvl1"
 authors = ["Pavel Bondar <kortofel39@gmail.com>"]

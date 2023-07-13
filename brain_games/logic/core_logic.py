@@ -14,13 +14,13 @@ def prompt_and_get_user_name():
 def play_rounds(logic, name):
     count_win = 0
 
+    ask, resp = logic()
+
     while True:
-        ask, rep = logic()
-        ask, rep = rep[0], rep[1]
         print('Question: {}'.format(ask))
         resp_user = prompt.string('Your answer: ')
 
-        if resp_user == rep:
+        if resp_user == resp:
             print("Correct!")
             count_win += 1
 
@@ -28,8 +28,7 @@ def play_rounds(logic, name):
                 print('Congratulations, {}!'.format(name))
                 break
         else:
-            print('"{0}" is wrong answer ;(. Correct answer was "{1}"'.format(
-                resp_user, rep))
+            print('"{0}" is wrong answer ;(. Correct answer was "{1}"'.format(resp_user, resp))
             print('Let\'s try again, {}!'.format(name))
             break
 
