@@ -2,7 +2,7 @@
 
 
 **Package have 6 games. They run when you will write command:**
-- brain-games  https://asciinema.org/a/56p4xi5W64VsAUaivrxuFY0AY
+- brain-games  [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/56p4xi5W64VsAUaivrxuFY0AY)
 - brain-even  https://asciinema.org/a/7eifA3Txh5MfEkG4J4NEbaKpe      
 - brain-calc  https://asciinema.org/a/BCJGci5JjxCtRsJFmGv2duV47     
 - brain-gcd   https://asciinema.org/a/govoe6VVa1TY1sZ31eWJgfeat    
