@@ -6,12 +6,12 @@ TASK = 'What number is missing in the progression?'
 
 def games():
     step = random.randint(1, 10)
-    invsible_value = random.randint(0, 9)
+    index = random.randint(0, 9)
     progression = [str(i) for i in range(4 + step, 5 + step * 10, step)]
-    print("invsible_value ===", invsible_value, end="/n")
+    print("index ===", index, end="\n")
     print("progression ===", progression)
-    resp = progression[invsible_value]
-    progression[invsible_value] = '..'
+    resp = progression[index]
+    progression[index] = '..'
 
     return " ".join(progression), str(resp)
 

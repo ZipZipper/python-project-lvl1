@@ -16,5 +16,6 @@ def find_minimal_divisor(num1, num2):
     else:
         return str(1)
 
+
 def brain_gcd_game():
     start_game(TASK, games)
