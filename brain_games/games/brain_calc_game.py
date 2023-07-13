@@ -6,7 +6,7 @@ TASK = 'What is the result of the expression?'
 
 
 def games():
-    random_sign = ["+", "-", "*"][random.randint(0, 2)]
+    random_sign = random.choice(["+", "-", "*"])
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     result_print = "{0} {1} {2}".format(num1, random_sign, num2)
