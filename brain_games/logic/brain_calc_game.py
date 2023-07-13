@@ -1,4 +1,4 @@
-from .core_logic import start_game
+from brain_games.core_logic import start_game
 import random
 
 TASK = 'What is the result of the expression?'

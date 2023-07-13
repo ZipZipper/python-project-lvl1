@@ -1,5 +1,5 @@
 import random
-from .core_logic import start_game
+from brain_games.core_logic import start_game
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 

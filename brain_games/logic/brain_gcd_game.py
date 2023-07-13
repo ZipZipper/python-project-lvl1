@@ -1,5 +1,5 @@
 import random
-from .core_logic import start_game
+from brain_games.core_logic import start_game
 
 TASK = 'Find the greatest common divisor of given numbers.'
 
