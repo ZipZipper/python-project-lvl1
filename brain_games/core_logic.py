@@ -14,7 +14,7 @@ def prompt_and_get_user_name():
 def play_rounds(logic, name):
     COUNT_ROUNDS = 3
     count_win = 0
-      
+
     while True:
         ask, resp = logic()
         print('Question: {}'.format(ask))
