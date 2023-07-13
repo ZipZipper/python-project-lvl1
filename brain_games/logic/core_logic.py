@@ -1,11 +1,11 @@
 import prompt
 
 
-def greetings():
+def _hello():
     print('Welcome to the Brain Games!')
 
 
-def prompt_and_get_user_name():
+def _get_name_user():
     name = prompt.string('May I have your name?')
     print('Hello, {}!'.format(name))
     return name
@@ -34,8 +34,8 @@ def _rounds_game(logic, name):
             break
 
 
-def start_game(TASK, logic):
-    greetings()
-    user_name = prompt_and_get_user_name()
-    print(TASK)
+def start_game(task, logic):
+    _hello()
+    user_name = _get_name_user()
+    print(task)
     _rounds_game(logic, user_name)

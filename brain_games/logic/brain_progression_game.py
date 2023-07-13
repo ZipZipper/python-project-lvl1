@@ -1,18 +1,20 @@
 import random
 from .core_logic import start_game
 
-TASK = 'What number is missing in the progression?'
+task = 'What number is missing in the progression?'
 
 
-def games():
+def logic():
     step = random.randint(1, 10)
-    index = random.randint(0, 9)
+    invsible_value = random.randint(0, 9)
     progression = [str(i) for i in range(4 + step, 5 + step * 10, step)]
-    hidden_value = progression[index]
-    progression[index] = '..'
+    print("invsible_value ===", invsible_value, end="/n")
+    print("progression ===", progression)
+    resp = progression[invsible_value]
+    progression[invsible_value] = '..'
 
-    return " ".join(progression), str(hidden_value)
+    return " ".join(progression), str(resp)
 
 
 def brain_progression_game():
-    start_game(TASK, games)
+    start_game(task, logic)
