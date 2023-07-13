@@ -13,10 +13,10 @@ def prompt_and_get_user_name():
 
 def _rounds_game(logic, name):
     count_win = 0
-    count_loss = 0
 
-    while count_loss < 3:
-        ask, resp = logic()
+    while True:
+        tupl_ask_and_resp = logic()
+        ask, resp = tupl_ask_and_resp[0], tupl_ask_and_resp[1]
         print('Question: {}'.format(ask))
         resp_user = prompt.string('Your answer: ')
 
@@ -28,13 +28,10 @@ def _rounds_game(logic, name):
                 print('Congratulations, {}!'.format(name))
                 break
         else:
-            count_loss += 1
             print('"{0}" is wrong answer ;(. Correct answer was "{1}"'.format(
                 resp_user, resp))
             print('Let\'s try again, {}!'.format(name))
-
-    if count_loss == 3:
-        print('You have reached the maximum number of attempts.')
+            break
 
 
 def start_game(TASK, logic):
