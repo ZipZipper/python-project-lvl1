@@ -1,26 +1,27 @@
 from .core_logic import start_game
 import random
+import operator
 
-task = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
 
 
-def logic():
-    random_sign = ["+", "-", "*"][random.randint(0, 2)]
+def games():
+    random_sign = random.choice(["+", "-", "*"])
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
     result_print = "{0} {1} {2}".format(num1, random_sign, num2)
 
-    return result_print, is_correct_result_exp(num1, random_sign, num2)
+    return result_print, calculate_expression(num1, random_sign, num2)
 
 
-def is_correct_result_exp(num1, sing, num2):
-    if sing == "+":
-        return str(num1 + num2)
-    elif sing == "-":
-        return str(num1 - num2)
-    elif sing == "*":
-        return str(num1 * num2)
+def calculate_expression(num1, sign, num2):
+    if sign == "+":
+        return str(operator.add(num1, num2))
+    elif sign == "-":
+        return str(operator.sub(num1, num2))
+    elif sign == "*":
+        return str(operator.mul(num1, num2))
 
 
 def brain_calc_game():
-    start_game(task, logic)
+    start_game(TASK, games)
