@@ -1,7 +1,7 @@
 from .core_logic import start_game
 import random
 
-task = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
 
 
 def logic():
@@ -23,4 +23,4 @@ def is_correct_result_exp(num1, sing, num2):
 
 
 def brain_calc_game():
-    start_game(task, logic)
+    start_game(TASK, logic)

@@ -1,7 +1,7 @@
 import random
 from .core_logic import start_game
 
-task = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
 
 
 def logic():
@@ -17,4 +17,4 @@ def logic():
 
 
 def brain_progression_game():
-    start_game(task, logic)
+    start_game(TASK, logic)

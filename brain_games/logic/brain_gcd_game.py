@@ -1,7 +1,7 @@
 import random
 from .core_logic import start_game
 
-task = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
 
 
 def logic():
@@ -18,4 +18,4 @@ def _is_minimal_div(num1, num2):
 
 
 def brain_gcd_game():
-    start_game(task, logic)
+    start_game(TASK, logic)
