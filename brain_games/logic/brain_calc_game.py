@@ -4,7 +4,7 @@ import random
 TASK = 'What is the result of the expression?'
 
 
-def logic():
+def games():
     random_sign = ["+", "-", "*"][random.randint(0, 2)]
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
@@ -23,4 +23,4 @@ def is_correct_result_exp(num1, sing, num2):
 
 
 def brain_calc_game():
-    start_game(TASK, logic)
+    start_game(TASK, games)

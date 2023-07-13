@@ -1,7 +1,7 @@
 import prompt
 
 
-def _hello():
+def greeting():
     print('Welcome to the Brain Games!')
 
 
@@ -11,7 +11,7 @@ def _get_name_user():
     return name
 
 
-def _rounds_game(logic, name):
+def play_rounds(logic, name):
     count_win = 0
 
     while True:
@@ -35,7 +35,7 @@ def _rounds_game(logic, name):
 
 
 def start_game(task, logic):
-    _hello()
+    greeting()
     user_name = _get_name_user()
     print(task)
-    _rounds_game(logic, user_name)
+    play_rounds(logic, user_name)

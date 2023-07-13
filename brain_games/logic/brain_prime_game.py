@@ -4,7 +4,7 @@ from .core_logic import start_game
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def logic():
+def games():
     num1 = random.randint(1, 100)
     resp = 'yes' if _is_prime(num1) else 'no'
     return num1, resp
@@ -15,4 +15,4 @@ def _is_prime(num_):
 
 
 def brain_prime_game():
-    start_game(TASK, logic)
+    start_game(TASK, games)

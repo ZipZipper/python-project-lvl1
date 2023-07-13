@@ -4,7 +4,7 @@ from .core_logic import start_game
 TASK = 'What number is missing in the progression?'
 
 
-def logic():
+def games():
     step = random.randint(1, 10)
     invsible_value = random.randint(0, 9)
     progression = [str(i) for i in range(4 + step, 5 + step * 10, step)]
@@ -17,4 +17,4 @@ def logic():
 
 
 def brain_progression_game():
-    start_game(TASK, logic)
+    start_game(TASK, games)
