@@ -10,12 +10,10 @@ def games():
 
 
 def is_even(num_):
-    lower_num = num_.lower()
-    if lower_num == 'yes':
+    if num_ % 2 == 0:
         return True
-    if lower_num == 'no':
+    else:
         return False
-    return False
 
 
 def brain_even_game():
