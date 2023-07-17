@@ -10,7 +10,7 @@ def play_games():
 
 
 def is_even(num_):
-    return 'yes' if num_ % 2 == 0 else 'no'
+    return num_ % 2 == 0
 
 
 def brain_even_game():
