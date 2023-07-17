@@ -19,7 +19,7 @@ def play_rounds(process, name):
     while True:
         ask, resp = process()
         print('Question: {}'.format(ask))
-        resp_user = prompt.string('Your answer: ')
+        resp_user = int(prompt.string('Your answer: '))
 
         if resp_user == resp:
             print("Correct!")
