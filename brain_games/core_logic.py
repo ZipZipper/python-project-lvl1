@@ -1,5 +1,5 @@
 import prompt
-
+COUNT_ROUNDS = 3
 
 def greeting():
     print('Welcome to the Brain Games!')
@@ -12,7 +12,6 @@ def prompt_and_get_user_name():
 
 
 def play_rounds(process, name):
-    COUNT_ROUNDS = 3
     count_win = 0
 
     while True:
