@@ -14,13 +14,20 @@ def play_games():
     return result_print, calculate_expression_result(num1, random_sign, num2)
 
 
-def calculate_expression_result(num1, sign, num2):
+def get_operator_function(sign):
     if sign == "+":
-        return str(operator.add(num1, num2))
+        return operator.add
     elif sign == "-":
-        return str(operator.sub(num1, num2))
+        return operator.sub
     elif sign == "*":
-        return str(operator.mul(num1, num2))
+        return operator.mul
+    else:
+        raise ValueError("Недопустимый оператор: " + sign)
+
+
+def calculate_expression_result(num1, sign, num2):
+    operator_func = get_operator_function(sign)
+    return str(operator_func(num1, num2))
 
 
 def brain_calc_game():
