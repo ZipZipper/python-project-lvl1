@@ -4,7 +4,7 @@ from brain_games.core_logic import start_game
 TASK = 'Find the greatest common divisor of given numbers.'
 
 
-def games():
+def play_games():
     num1, num2 = random.randint(1, 100), random.randint(1, 100)
     return "{0} {1}".format(num1, num2), find_minimal_divisor(num1, num2)
 
