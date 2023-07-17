@@ -11,12 +11,12 @@ def prompt_and_get_user_name():
     return name
 
 
-def play_rounds(ask, name):
+def play_rounds(process, name):
     COUNT_ROUNDS = 3
     count_win = 0
 
     while True:
-        ask, resp = ask()
+        ask, resp = process()
         print('Question: {}'.format(ask))
         resp_user = prompt.string('Your answer: ')
 
