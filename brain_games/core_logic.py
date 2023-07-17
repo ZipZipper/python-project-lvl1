@@ -1,6 +1,7 @@
 import prompt
 COUNT_ROUNDS = 3
 
+
 def greeting():
     print('Welcome to the Brain Games!')
 
