@@ -5,7 +5,7 @@ import operator
 TASK = 'What is the result of the expression?'
 
 
-def games():
+def play_games():
     random_sign = random.choice(["+", "-", "*"])
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
@@ -24,4 +24,4 @@ def calculate_expression_result(num1, sign, num2):
 
 
 def brain_calc_game():
-    start_game(TASK, games)
+    start_game(TASK, play_games)
