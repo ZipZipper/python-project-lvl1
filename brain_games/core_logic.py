@@ -3,7 +3,7 @@ import prompt
 COUNT_ROUNDS = 3
 
 
-def greeting():
+def run_greeting():
     print('Welcome to the Brain Games!')
 
 
@@ -13,15 +13,15 @@ def prompt_and_get_user_name():
     return name
 
 
-def play_rounds(process, name):
+def play_rounds(generate_question_and_answer, name):
     count_win = 0
 
     while True:
-        ask, resp = process()
-        print('Question: {}'.format(ask))
-        resp_user = prompt.string('Your answer: ')
+        question, correct_answer = generate_question_and_answer()
+        print('Question: {}'.format(question))
+        user_answer = prompt.string('Your answer: ')
 
-        if resp_user == resp:
+        if user_answer == correct_answer:
             print("Correct!")
             count_win += 1
 
@@ -30,13 +30,13 @@ def play_rounds(process, name):
                 break
         else:
             print('"{0}" is wrong answer ;(. Correct answer was "{1}"'.format(
-                resp_user, resp))
+                user_answer, correct_answer))
             print('Let\'s try again, {}!'.format(name))
             break
 
 
 def start_game(task, logic):
-    greeting()
+    run_greeting()
     user_name = prompt_and_get_user_name()
     print(task)
     play_rounds(logic, user_name)
