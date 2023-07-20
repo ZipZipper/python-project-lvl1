@@ -13,9 +13,7 @@ def start_game(game_task, get_game_question_answer):
         f"{game_task}"
     )
 
-    cycles_count = 3
-    # num_cycles = 3
-    for cycle in range(cycles_count):
+    for cycle in range(COUNT_ROUNDS):
         question, correct_answer = get_game_question_answer()
         print(f'Question: {question}')
 
