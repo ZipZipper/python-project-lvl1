@@ -1,5 +1,4 @@
 import random
-from brain_games.core_logic import start_game
 
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
@@ -15,7 +14,3 @@ def is_even(num_):
 
 def bool_to_answer(value):
     return "yes" if value else "no"
-
-
-def brain_even_game():
-    start_game(TASK, play_games)
