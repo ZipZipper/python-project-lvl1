@@ -1,5 +1,4 @@
 import random
-from brain_games.core_logic import start_game
 
 TASK = 'What number is missing in the progression?'
 
@@ -12,7 +11,3 @@ def play_games():
     progression[index] = '..'
 
     return " ".join(progression), str(resp)
-
-
-def brain_progression_game():
-    start_game(TASK, play_games)
