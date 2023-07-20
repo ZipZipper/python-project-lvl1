@@ -1,6 +1,19 @@
 ## Python hexlet-project-lvl1 
 
 
+#### Requirements
+python = ">=3.8.1,<4.0"
+prompt = "^0.4.1"
+
+#### Installation
+
+```
+git clone https://github.com/ZipZipper/python-project-lvl1
+cd python-project-lvl1
+make package-install
+```
+
+
 **Package have 6 games. They run when you will write command:**
 - brain-games  [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/56p4xi5W64VsAUaivrxuFY0AY)
 - brain-even  [![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/7eifA3Txh5MfEkG4J4NEbaKpe)      
