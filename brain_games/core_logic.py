@@ -1,32 +1,42 @@
 import prompt
-import sys
 
 COUNT_ROUNDS = 3
 
 
-def start_game(game_task, get_game_question_answer):
+def run_greeting():
     print('Welcome to the Brain Games!')
 
-    user_name = prompt.string('May I have your name? ')
-    print(
-        f"Hello, {user_name}!\n"
-        f"{game_task}"
-    )
 
-    for cycle in range(COUNT_ROUNDS):
+def prompt_and_get_user_name():
+    name = prompt.string('May I have your name?')
+    print('Hello, {}!'.format(name))
+    return name
+
+
+def play_rounds(get_game_question_answer, name):
+    count_win = 0
+
+    while True:
         question, correct_answer = get_game_question_answer()
-        print(f'Question: {question}')
+        print('Question: {}'.format(question))
+        resp_user = prompt.string('Your answer: ')
 
-        user_answer = prompt.string('Your answer: ')
-        if user_answer == correct_answer:
-            print('Correct!')
+        if resp_user == correct_answer:
+            print("Correct!")
+            count_win += 1
 
+            if count_win == COUNT_ROUNDS:
+                print('Congratulations, {}!'.format(name))
+                break
         else:
-            print(
-                f"'{user_answer}' is wrong answer ;(. "
-                f"Correct answer was '{correct_answer}'.\n"
-                f"Let's try again, {user_name}!"
-            )
-            sys.exit()
+            print('"{0}" is wrong answer ;(. Correct answer was "{1}"'.format(
+                resp_user, correct_answer))
+            print('Let\'s try again, {}!'.format(name))
+            break
 
-    print(f'Congratulations, {user_name}!')
+
+def start_game(task, logic):
+    run_greeting()
+    user_name = prompt_and_get_user_name()
+    print(task)
+    play_rounds(logic, user_name)
